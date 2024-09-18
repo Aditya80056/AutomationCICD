@@ -1,0 +1,13 @@
+[
+
+{
+	"email" : "userEmail",
+	"password" : "passWord"
+},
+
+{
+	"Email" : "userLogin",
+	"Password" : "userPassword"
+}
+
+]

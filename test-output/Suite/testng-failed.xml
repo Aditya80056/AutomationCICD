@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="SeleniumFrameworkDesign.MyProject.TestComponents.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Happy Flow(failed)" preserve-order="true">
+    <classes>
+      <class name="SeleniumFrameworkDesign.tests.appLogin">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="appLoginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SeleniumFrameworkDesign.tests.appLogin -->
+      <class name="SeleniumFrameworkDesign.tests.ErrorValidations">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SeleniumFrameworkDesign.tests.ErrorValidations -->
+    </classes>
+  </test> <!-- Happy Flow(failed) -->
+</suite> <!-- Failed suite [Suite] -->
